@@ -1,0 +1,16 @@
+<div class="row" *ngIf="profile">
+    <!-- muestra las foto del prefil -->
+    <div class="col-md-4">
+        <img [src]="profile.picture" class="img-fluid">
+    </div>
+
+    <div class="col-md-8">
+        <!-- muestra el nombre, el apellido y el usuario del perfil de google de auth0 -->
+        <ul class="list-group">
+            <li class="list-group-item">{{ profile.name}}</li>
+            <li class="list-group-item">{{ profile.family_name}}</li>
+            <li class="list-group-item">{{ profile.nickname}}</li>
+        </ul>
+    </div>
+
+</div>
